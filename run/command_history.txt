@@ -1,0 +1,15 @@
+/effect give Dev minecraft:night_vision infinite 255 true
+/advancement revoke Dev everything
+/difficulty peaceful
+/effect give @s minecraft:night_vision infinite 255 true
+/give
+/give @s minecraft:crafter
+/give @s minecraft:crafting_table
+/give @s minecraft:iron_ingot 64
+/advancement revoke Dev everything
+/give @s minecraft:birch_planks 64
+/give @s minecraft:redstone
+/reload
+/give @s minecraft:experience_bottle 64
+/data get block 4 69 -29
+/give @s minecraft:experience_bottle 64

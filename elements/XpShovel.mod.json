@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "xp_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "经验锄",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:Mod"
+      }
+    ],
+    "efficiency": 12.0,
+    "attackSpeed": 3.0,
+    "enchantability": 42,
+    "damageVsEntity": 14.0,
+    "usageCount": 1164,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Xpingotplus"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Fall_xp"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "Fall_xp"
+    }
+  }
+}

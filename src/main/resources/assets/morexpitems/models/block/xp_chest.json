@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "morexpitems:block/xp_chest_di",
+    "up": "morexpitems:block/xp_chest_top",
+    "north": "morexpitems:block/xp_chest_ce",
+    "east": "morexpitems:block/xp_chest_ce",
+    "south": "morexpitems:block/xp_chest_ce",
+    "west": "morexpitems:block/xp_chest_ce",
+    "particle": "morexpitems:block/xp_chest_di"
+  },
+  "render_type": "solid"
+}

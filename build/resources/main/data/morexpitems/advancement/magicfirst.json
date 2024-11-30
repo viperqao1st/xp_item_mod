@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "morexpitems:xp_ingot"
+    },
+    "title": {
+      "translate": "advancements.magicfirst.title"
+    },
+    "description": {
+      "translate": "advancements.magicfirst.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "magicfirst_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morexpitems:xp_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2,
+    "recipes": [
+      "morexpitems:xpbottolfromingot",
+      "morexpitems:xp_ingot_plus"
+    ]
+  },
+  "parent": "morexpitems:root"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "morexpitems:textures/screens/xp_ore.png",
+    "icon": {
+      "id": "morexpitems:xp_ore"
+    },
+    "title": {
+      "translate": "advancements.root.title"
+    },
+    "description": {
+      "translate": "advancements.root.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "root_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

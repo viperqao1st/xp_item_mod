@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "morexpitems:block/xp_ore",
+    "up": "morexpitems:block/xp_ore",
+    "north": "morexpitems:block/xp_ore",
+    "east": "morexpitems:block/xp_ore",
+    "south": "morexpitems:block/xp_ore",
+    "west": "morexpitems:block/xp_ore",
+    "particle": "morexpitems:block/xp_ore"
+  },
+  "render_type": "solid"
+}

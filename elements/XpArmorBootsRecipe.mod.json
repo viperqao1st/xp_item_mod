@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:XpArmor.boots"
+    },
+    "name": "xp_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

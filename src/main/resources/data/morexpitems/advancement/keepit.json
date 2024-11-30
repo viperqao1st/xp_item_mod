@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "morexpitems:xp_chest"
+    },
+    "title": {
+      "translate": "advancements.keepit.title"
+    },
+    "description": {
+      "translate": "advancements.keepit.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "keepit_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morexpitems:xp_chest"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "morexpitems:it_updted"
+}

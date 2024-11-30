@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bab",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "morexpitems:xp_ingot_plus"
+    },
+    "b": {
+      "tag": "minecraft:planks"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "morexpitems:xp_chest",
+    "count": 1
+  }
+}

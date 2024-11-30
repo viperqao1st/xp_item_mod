@@ -1,0 +1,548 @@
+{
+  "mod_elements": [
+    {
+      "name": "Xpore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/neoforge/biome_modifier/xp_ore_biome_modifier.json",
+          "src/main/resources/data/morexpitems/loot_table/blocks/xp_ore.json",
+          "src/main/java/net/viper/morexpitems/block/XporeBlock.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_ore.json",
+          "src/main/resources/assets/morexpitems/models/block/xp_ore.json",
+          "src/main/resources/data/morexpitems/worldgen/placed_feature/xp_ore.json",
+          "src/main/resources/assets/morexpitems/blockstates/xp_ore.json",
+          "src/main/resources/data/morexpitems/worldgen/configured_feature/xp_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "Xpingot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/morexpitems/models/item/xp_ingot.json",
+          "src/main/java/net/viper/morexpitems/item/XpingotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Xpbottolfromingt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpbottolfromingt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xpbottolfromingot.json"
+        ]
+      }
+    },
+    {
+      "name": "Root",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/advancement/root.json"
+        ]
+      }
+    },
+    {
+      "name": "Magicfirst",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicfirst",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/advancement/magicfirst.json"
+        ]
+      }
+    },
+    {
+      "name": "Xpchestbottletoxp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpchestbottletoxp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/procedures/XpchestbottletoxpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xpchestxptobottle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpchestxptobottle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/procedures/XpchestxptobottleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xpchestgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpchestgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/network/XpchestguiSlotMessage.java",
+          "src/main/java/net/viper/morexpitems/client/gui/XpchestguiScreen.java",
+          "src/main/java/net/viper/morexpitems/world/inventory/XpchestguiMenu.java",
+          "src/main/java/net/viper/morexpitems/network/XpchestguiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Xpchest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/morexpitems/models/block/xp_chest.json",
+          "src/main/java/net/viper/morexpitems/block/XpchestBlock.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_chest.json",
+          "src/main/resources/data/morexpitems/loot_table/blocks/xp_chest.json",
+          "src/main/java/net/viper/morexpitems/block/entity/XpchestBlockEntity.java",
+          "src/main/resources/assets/morexpitems/blockstates/xp_chest.json"
+        ]
+      }
+    },
+    {
+      "name": "Xpingotplus",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_ingot_plus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/item/XpingotplusItem.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_ingot_plus.json"
+        ]
+      }
+    },
+    {
+      "name": "Itupdted",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "it_updted",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/advancement/it_updted.json"
+        ]
+      }
+    },
+    {
+      "name": "Xpingotpluscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpingotpluscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_ingot_plus.json"
+        ]
+      }
+    },
+    {
+      "name": "Xpchestcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpchestcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_chest.json"
+        ]
+      }
+    },
+    {
+      "name": "Keepit",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keepit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/advancement/keepit.json"
+        ]
+      }
+    },
+    {
+      "name": "Mod",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Fall_xp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/procedures/Fall_xpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "XpArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/item/XpArmorItem.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_armor_leggings.json",
+          "src/main/resources/assets/morexpitems/models/item/xp_armor_helmet.json",
+          "src/main/resources/assets/morexpitems/models/item/xp_armor_boots.json",
+          "src/main/resources/assets/morexpitems/models/item/xp_armor_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "XpArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_armor_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/morexpitems/models/item/xp_pickaxe.json",
+          "src/main/java/net/viper/morexpitems/item/XpPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XpAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/item/XpAxeItem.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/morexpitems/models/item/xp_shovel.json",
+          "src/main/java/net/viper/morexpitems/item/XpShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XpHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/viper/morexpitems/item/XpHoeItem.java",
+          "src/main/resources/assets/morexpitems/models/item/xp_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XpHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/recipe/xp_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Tooldefull",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tooldefull",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/morexpitems/advancement/tooldefull.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:XpArmor.body"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:XpPickaxe"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Xpore"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:XpArmor.legs"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:XpHoe"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Xpore"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:XpArmor.helmet"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:XpShovel"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:XpAxe"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:XpArmor.boots"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "advancements.magicfirst.descr": "这是什么矿物？",
+      "gui.morexpitems.xpchestgui.button_ba_cun_chu_de_jing_yan_zhuan_wei_ping": "         把存储的经验转为瓶         ",
+      "item.morexpitems.xp_ingot_plus": "强化经验锭",
+      "advancements.it_updted.title": "他升级了！",
+      "item.morexpitems.xp_armor_leggings": "经验护腿",
+      "item_group.morexpitems.mod": "更多经验物品",
+      "item.morexpitems.xp_armor_helmet": "经验头盔",
+      "advancements.it_updted.descr": "经验锭Pro Max",
+      "advancements.keepit.title": "高级存储",
+      "gui.morexpitems.xpchestgui.label_jing_yan_cun_chu_qi": "经验存储器",
+      "item.morexpitems.xp_armor_boots": "经验鞋",
+      "advancements.keepit.descr": "这才叫存储",
+      "advancements.magicfirst.title": "魔法之初",
+      "advancements.root.title": "经验！",
+      "item.morexpitems.xp_axe": "经验斧",
+      "advancements.tooldefull.title": "装备齐全",
+      "block.morexpitems.xp_ore": "经验矿石",
+      "item.morexpitems.xp_ingot": "经验锭",
+      "item.morexpitems.xp_hoe": "经验qiao",
+      "advancements.root.descr": "开始你的经验之旅",
+      "item.morexpitems.xp_armor_chestplate": "经验胸甲",
+      "gui.morexpitems.xpchestgui.button_ba_jing_yan_zhuan_wei_ping": "     把经验转为瓶     ",
+      "item.morexpitems.xp_pickaxe": "经验稿",
+      "gui.morexpitems.xpchestgui.button_ba_jing_yan_ping_cun_chu": "把经验瓶存储",
+      "block.morexpitems.xp_chest": "经验盒子",
+      "item.morexpitems.xp_shovel": "经验锄",
+      "advancements.tooldefull.descr": "装备齐全，随时可以出发"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "morexpitems",
+    "modName": "更多经验物品",
+    "version": "1.0.0",
+    "author": "Viper, MCreator",
+    "websiteURL": "https://viperqao1st.github.io",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.viper.morexpitems"
+  },
+  "mcreatorVersion": 202400342716
+}
