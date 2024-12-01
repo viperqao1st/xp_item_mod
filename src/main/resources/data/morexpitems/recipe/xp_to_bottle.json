@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "morexpitems:xp_ingot"
+    },
+    {
+      "item": "morexpitems:xp_ingot_plus"
+    },
+    {
+      "item": "morexpitems:xp_ingot_plus"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "result": {
+    "id": "morexpitems:xp_to_bottle",
+    "count": 1
+  }
+}

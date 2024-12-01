@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Xptobottle"
+    },
+    "name": "xp_to_bottle",
+    "namespace": "mod"
+  }
+}

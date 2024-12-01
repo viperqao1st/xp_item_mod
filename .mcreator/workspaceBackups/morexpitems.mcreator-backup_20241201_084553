@@ -500,18 +500,6 @@
           "src/main/java/net/viper/morexpitems/item/XptobottleItem.java"
         ]
       }
-    },
-    {
-      "name": "Xptobottlecraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "xptobottlecraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/morexpitems/recipe/xp_to_bottle.json"
-        ]
-      }
     }
   ],
   "variable_elements": [],
