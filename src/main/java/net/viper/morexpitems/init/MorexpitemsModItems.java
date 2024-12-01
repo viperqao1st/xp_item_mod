@@ -4,6 +4,7 @@
  */
 package net.viper.morexpitems.init;
 
+import net.viper.morexpitems.item.XptobottleItem;
 import net.viper.morexpitems.item.XpswordItem;
 import net.viper.morexpitems.item.XpingotplusItem;
 import net.viper.morexpitems.item.XpingotItem;
@@ -37,6 +38,7 @@ public class MorexpitemsModItems {
 	public static final DeferredItem<Item> XP_SHOVEL = REGISTRY.register("xp_shovel", XpShovelItem::new);
 	public static final DeferredItem<Item> XP_HOE = REGISTRY.register("xp_hoe", XpHoeItem::new);
 	public static final DeferredItem<Item> XP_SWORD = REGISTRY.register("xp_sword", XpswordItem::new);
+	public static final DeferredItem<Item> XP_TO_BOTTLE = REGISTRY.register("xp_to_bottle", XptobottleItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

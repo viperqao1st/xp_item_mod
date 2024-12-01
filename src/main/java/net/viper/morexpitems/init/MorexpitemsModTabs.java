@@ -32,6 +32,7 @@ public class MorexpitemsModTabs {
 				tabData.accept(MorexpitemsModItems.XP_SHOVEL.get());
 				tabData.accept(MorexpitemsModItems.XP_HOE.get());
 				tabData.accept(MorexpitemsModItems.XP_SWORD.get());
+				tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
 			})
 
 					.build());
@@ -61,6 +62,7 @@ public class MorexpitemsModTabs {
 			tabData.accept(MorexpitemsModItems.XP_AXE.get());
 			tabData.accept(MorexpitemsModItems.XP_SHOVEL.get());
 			tabData.accept(MorexpitemsModItems.XP_HOE.get());
+			tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
 
 		}
 	}

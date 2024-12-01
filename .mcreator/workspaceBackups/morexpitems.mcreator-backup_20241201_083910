@@ -493,10 +493,10 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xp_to_bottle",
+      "registry_name": "xptobottle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/morexpitems/models/item/xp_to_bottle.json",
+          "src/main/resources/assets/morexpitems/models/item/xptobottle.json",
           "src/main/java/net/viper/morexpitems/item/XptobottleItem.java"
         ]
       }
@@ -556,7 +556,6 @@
       "advancements.root.title": "经验！",
       "item.morexpitems.xp_axe": "经验斧",
       "advancements.tooldefull.title": "装备齐全",
-      "item.morexpitems.xp_to_bottle": "Xptobottle",
       "block.morexpitems.xp_ore": "经验矿石",
       "item.morexpitems.xp_ingot": "经验锭",
       "item.morexpitems.xp_hoe": "经验qiao",
@@ -567,7 +566,8 @@
       "gui.morexpitems.xpchestgui.button_ba_jing_yan_ping_cun_chu": "把经验瓶存储",
       "block.morexpitems.xp_chest": "经验盒子",
       "item.morexpitems.xp_shovel": "经验锄",
-      "advancements.tooldefull.descr": "装备齐全，随时可以出发"
+      "advancements.tooldefull.descr": "装备齐全，随时可以出发",
+      "item.morexpitems.xptobottle": "Xptobottle"
     }
   },
   "foldersRoot": {
