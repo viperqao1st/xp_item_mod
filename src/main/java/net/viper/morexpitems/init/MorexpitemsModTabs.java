@@ -33,37 +33,27 @@ public class MorexpitemsModTabs {
 				tabData.accept(MorexpitemsModItems.XP_HOE.get());
 				tabData.accept(MorexpitemsModItems.XP_SWORD.get());
 				tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
-			})
-
-					.build());
+			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(MorexpitemsModBlocks.XP_ORE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(MorexpitemsModItems.XP_INGOT.get());
+			tabData.accept(MorexpitemsModItems.XP_INGOT_PLUS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MorexpitemsModItems.XP_ARMOR_HELMET.get());
 			tabData.accept(MorexpitemsModItems.XP_ARMOR_CHESTPLATE.get());
 			tabData.accept(MorexpitemsModItems.XP_ARMOR_LEGGINGS.get());
 			tabData.accept(MorexpitemsModItems.XP_ARMOR_BOOTS.get());
 			tabData.accept(MorexpitemsModItems.XP_SWORD.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
-			tabData.accept(MorexpitemsModItems.XP_INGOT.get());
-			tabData.accept(MorexpitemsModItems.XP_INGOT_PLUS.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-
-			tabData.accept(MorexpitemsModBlocks.XP_ORE.get().asItem());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-
 			tabData.accept(MorexpitemsModItems.XP_PICKAXE.get());
 			tabData.accept(MorexpitemsModItems.XP_AXE.get());
 			tabData.accept(MorexpitemsModItems.XP_SHOVEL.get());
 			tabData.accept(MorexpitemsModItems.XP_HOE.get());
 			tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
-
 		}
 	}
 }

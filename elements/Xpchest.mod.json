@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "xp_chest_di",
@@ -36,7 +36,7 @@
     "customProperties": [
       {
         "min": 0,
-        "max": 1024,
+        "max": 2147483646,
         "name": "CUSTOM:xp_count",
         "type": "integer",
         "value": 0
@@ -134,6 +134,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onStartToDestroy": {
+      "name": "Xpchest_breakfallxp"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

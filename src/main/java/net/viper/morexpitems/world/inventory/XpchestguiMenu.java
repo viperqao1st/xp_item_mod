@@ -90,6 +90,10 @@ public class XpchestguiMenu extends AbstractContainerMenu implements Supplier<Ma
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 26) {
+			private final int slot = 0;
+			private int x = XpchestguiMenu.this.x;
+			private int y = XpchestguiMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -97,6 +101,10 @@ public class XpchestguiMenu extends AbstractContainerMenu implements Supplier<Ma
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 133, 26) {
+			private final int slot = 1;
+			private int x = XpchestguiMenu.this.x;
+			private int y = XpchestguiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

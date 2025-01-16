@@ -3,6 +3,9 @@ package net.viper.morexpitems.item;
 
 import net.viper.morexpitems.procedures.Xp_to_bottle_getbottleProcedure;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +17,12 @@ import net.minecraft.world.InteractionHand;
 public class XptobottleItem extends Item {
 	public XptobottleItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override

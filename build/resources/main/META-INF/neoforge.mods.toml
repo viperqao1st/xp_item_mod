@@ -4,11 +4,12 @@ license="Not specified"
 
 [[mods]]
 modId="morexpitems"
-version="1.0.0"
+version="0.9.0"
 displayName="\u66F4\u591A\u7ECF\u9A8C\u7269\u54C1"
 displayURL="https://viperqao1st.github.io"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Viper, MCreator"
+credits="Viper,feiwugangyi,DHLWfree2"
+authors="Viper, Qaokelitus"
+description="\u66F4\u591A\u7ECF\u9A8C\u7269\u54C1"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

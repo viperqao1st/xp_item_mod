@@ -2,6 +2,7 @@
 package net.viper.morexpitems.block;
 
 import net.viper.morexpitems.world.inventory.XpchestguiMenu;
+import net.viper.morexpitems.procedures.Xpchest_breakfallxpProcedure;
 import net.viper.morexpitems.block.entity.XpchestBlockEntity;
 
 import net.minecraft.world.phys.BlockHitResult;
@@ -31,7 +32,7 @@ import net.minecraft.core.BlockPos;
 import io.netty.buffer.Unpooled;
 
 public class XpchestBlock extends Block implements EntityBlock {
-	public static final IntegerProperty XP_COUNT = IntegerProperty.create("xp_count", 0, 1024);
+	public static final IntegerProperty XP_COUNT = IntegerProperty.create("xp_count", 0, 2147483646);
 
 	public XpchestBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(7f, 10f).noCollission());
@@ -57,6 +58,12 @@ public class XpchestBlock extends Block implements EntityBlock {
 	@Override
 	public float getEnchantPowerBonus(BlockState state, LevelReader world, BlockPos pos) {
 		return 3f;
+	}
+
+	@Override
+	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
+		super.attack(blockstate, world, pos, entity);
+		Xpchest_breakfallxpProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override
