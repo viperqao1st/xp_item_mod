@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import net.viper.morexpitems.init.MorexpitemsModTabs;
 import net.viper.morexpitems.init.MorexpitemsModMenus;
 import net.viper.morexpitems.init.MorexpitemsModItems;
+import net.viper.morexpitems.init.MorexpitemsModEntities;
 import net.viper.morexpitems.init.MorexpitemsModBlocks;
 import net.viper.morexpitems.init.MorexpitemsModBlockEntities;
 
@@ -45,7 +46,7 @@ public class MorexpitemsMod {
 		MorexpitemsModBlocks.REGISTRY.register(modEventBus);
 		MorexpitemsModBlockEntities.REGISTRY.register(modEventBus);
 		MorexpitemsModItems.REGISTRY.register(modEventBus);
-
+		MorexpitemsModEntities.REGISTRY.register(modEventBus);
 		MorexpitemsModTabs.REGISTRY.register(modEventBus);
 
 		MorexpitemsModMenus.REGISTRY.register(modEventBus);

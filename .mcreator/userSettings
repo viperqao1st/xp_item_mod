@@ -1,6 +1,20 @@
 {
-  "workspacePanelIconSize": "TILES",
+  "workspacePanelIconSize": "DETAILS",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0
+  "projectBrowserSplitPos": 280,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, 更多经验物品]",
+      "[, 更多经验物品, Resources (Gradle)]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\block]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\item]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\models]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\models, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\models\\armor]",
+      "[, 更多经验物品, Resources (Gradle), D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures, D:\\dvq.data\\mod\\morexpitems\\src\\main\\resources\\assets\\morexpitems\\textures\\screens]"
+    ]
+  }
 }

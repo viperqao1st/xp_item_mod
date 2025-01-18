@@ -13,11 +13,13 @@ import net.viper.morexpitems.item.XpPickaxeItem;
 import net.viper.morexpitems.item.XpHoeItem;
 import net.viper.morexpitems.item.XpAxeItem;
 import net.viper.morexpitems.item.XpArmorItem;
+import net.viper.morexpitems.item.GetsuperexpstickItem;
 import net.viper.morexpitems.MorexpitemsMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -39,6 +41,8 @@ public class MorexpitemsModItems {
 	public static final DeferredItem<Item> XP_HOE = REGISTRY.register("xp_hoe", XpHoeItem::new);
 	public static final DeferredItem<Item> XP_SWORD = REGISTRY.register("xp_sword", XpswordItem::new);
 	public static final DeferredItem<Item> XP_TO_BOTTLE = REGISTRY.register("xp_to_bottle", XptobottleItem::new);
+	public static final DeferredItem<Item> GET_SUPEREXP_STICK = REGISTRY.register("get_superexp_stick", GetsuperexpstickItem::new);
+	public static final DeferredItem<Item> SUPER_EXP_SPAWN_EGG = REGISTRY.register("super_exp_spawn_egg", () -> new DeferredSpawnEggItem(MorexpitemsModEntities.SUPER_EXP, -3342490, -10027162, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "morexpitems:item/get_super_exp_stick"
+  }
+}

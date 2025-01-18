@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "CUSTOM:Xpingot"
+      },
+      {
+        "value": "CUSTOM:Xpingotplus"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.COAL#0"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Getsuperexpstick"
+    },
+    "name": "getsuperexpcraft",
+    "namespace": "mod"
+  }
+}

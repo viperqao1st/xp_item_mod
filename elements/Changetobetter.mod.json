@@ -1,0 +1,24 @@
+{
+  "_fv": 73,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "吸收器",
+    "achievementDescription": "让你更强大",
+    "achievementIcon": {
+      "value": "CUSTOM:Getsuperexpstick"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 6,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:Itupdted"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"304\" y=\"132\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

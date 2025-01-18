@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "cde"
+  ],
+  "key": {
+    "a": {
+      "item": "morexpitems:xp_ingot_plus"
+    },
+    "b": {
+      "item": "morexpitems:xp_ingot"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    },
+    "d": {
+      "item": "minecraft:iron_ingot"
+    },
+    "e": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "morexpitems:get_superexp_stick",
+    "count": 1
+  }
+}

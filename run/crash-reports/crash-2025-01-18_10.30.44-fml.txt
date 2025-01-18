@@ -1,0 +1,191 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2025-01-18 10:30:44
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/java.util.HashMap.newNode(HashMap.java:1909) ~[?:?] {}
+-- Mod loading issue for: morexpitems --
+Details:
+	Mod file: /D:/dvq.data/mod/morexpitems/build/classes/java/main/
+	Failure message: 更多经验物品 (morexpitems) encountered an error while dispatching the net.neoforged.neoforge.registries.RegisterEvent event
+		java.lang.OutOfMemoryError: Java heap space
+	Mod version: 1.0
+	Mod issues URL: <No issues URL found>
+	Exception message: java.lang.OutOfMemoryError: Java heap space
+Stacktrace:
+	at java.base/java.util.HashMap.newNode(HashMap.java:1909) ~[?:?] {}
+	at java.base/java.util.HashMap.putVal(HashMap.java:637) ~[?:?] {}
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?] {}
+	at java.base/java.util.HashSet.add(HashSet.java:229) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.block.state.properties.IntegerProperty.<init>(IntegerProperty.java:26) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.block.state.properties.IntegerProperty.create(IntegerProperty.java:57) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/morexpitems@1.0/net.viper.morexpitems.block.XpchestBlock.<clinit>(XpchestBlock.java:35) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/morexpitems@1.0/net.viper.morexpitems.init.MorexpitemsModBlocks$$Lambda/0x0000023f81e4f0d8.get(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$Blocks.lambda$register$0(DeferredRegister.java:417) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$Blocks$$Lambda/0x0000023f81e4dde0.apply(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$register$1(DeferredRegister.java:234) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$$Lambda/0x0000023f81da8830.get(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$addEntries$2(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$$Lambda/0x0000023f81e61290.get(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.RegisterEvent.register(RegisterEvent.java:48) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.addEntries(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$$Lambda/0x0000023f81db35b8.accept(Unknown Source) ~[?:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:329) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:177) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.lambda$postEventWithWrapInModOrder$16(ModLoader.java:379) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader$$Lambda/0x0000023f81e64670.accept(Unknown Source) ~[?:?] {}
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModList.forEachModInOrder(ModList.java:164) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:377) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:368) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:92) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.internal.CommonModLoader.lambda$begin$0(CommonModLoader.java:54) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.internal.CommonModLoader$$Lambda/0x0000023f81e5f7d8.run(Unknown Source) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+
+
+-- Mod loading issue for: morexpitems --
+Details:
+	Mod file: /D:/dvq.data/mod/morexpitems/build/classes/java/main/
+	Failure message: 更多经验物品 (morexpitems) encountered an error while dispatching the net.neoforged.neoforge.registries.RegisterEvent event
+		java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / morexpitems:xp_chest]
+	Mod version: 1.0
+	Mod issues URL: <No issues URL found>
+	Exception message: java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / morexpitems:xp_chest]
+Stacktrace:
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredHolder.value(DeferredHolder.java:103) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredHolder.get(DeferredHolder.java:117) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/morexpitems@1.0/net.viper.morexpitems.init.MorexpitemsModItems.lambda$block$1(MorexpitemsModItems.java:50) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister$Items.lambda$register$0(DeferredRegister.java:483) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$register$1(DeferredRegister.java:234) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$addEntries$2(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.RegisterEvent.register(RegisterEvent.java:48) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.addEntries(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:329) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:177) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.lambda$postEventWithWrapInModOrder$16(ModLoader.java:379) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModList.forEachModInOrder(ModList.java:164) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:377) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:368) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:92) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.internal.CommonModLoader.lambda$begin$0(CommonModLoader.java:54) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?] {}
+
+
+-- Mod loading issue for: morexpitems --
+Details:
+	Mod file: /D:/dvq.data/mod/morexpitems/build/classes/java/main/
+	Failure message: 更多经验物品 (morexpitems) encountered an error while dispatching the net.neoforged.neoforge.registries.RegisterEvent event
+		java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / morexpitems:xp_chest]
+	Mod version: 1.0
+	Mod issues URL: <No issues URL found>
+	Exception message: java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / morexpitems:xp_chest]
+Stacktrace:
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredHolder.value(DeferredHolder.java:103) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredHolder.get(DeferredHolder.java:117) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/morexpitems@1.0/net.viper.morexpitems.init.MorexpitemsModBlockEntities.lambda$register$0(MorexpitemsModBlockEntities.java:29) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:215) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$register$1(DeferredRegister.java:234) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.lambda$addEntries$2(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.RegisterEvent.register(RegisterEvent.java:48) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.DeferredRegister.addEntries(DeferredRegister.java:375) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:329) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:177) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.lambda$postEventWithWrapInModOrder$16(ModLoader.java:379) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModList.forEachModInOrder(ModList.java:164) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:377) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:368) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:92) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.internal.CommonModLoader.lambda$begin$0(CommonModLoader.java:54) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 139013440 bytes (132 MiB) / 595591168 bytes (568 MiB) up to 4253024256 bytes (4056 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+	Identifier: Intel64 Family 6 Model 142 Stepping 12
+	Microarchitecture: Whiskey Lake
+	Frequency (GHz): 2.30
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 31.0.101.2127
+	Graphics card #1 name: NVIDIA GeForce MX250
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 2048.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.6603
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: LPDDR3
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: LPDDR3
+	Virtual memory max (MiB): 20571.39
+	Virtual memory used (MiB): 12941.66
+	Swap memory total (MiB): 4352.00
+	Swap memory used (MiB): 122.07
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 69680.63, total: 231057.52
+	Space in storage for workdir (MiB): available: 518981.91, total: 716794.00
+	JVM Flags: 2 total; -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE
+		main                                              |更多经验物品                        |morexpitems                   |1.0                 |Manifest: NOSIGNATURE
+	Crash Report UUID: 3a05827a-fb87-4812-b3a5-1d7bf550bc8c
+	FML: 4.0.24
+	NeoForge: 21.1.65

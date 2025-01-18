@@ -21,8 +21,8 @@ import net.minecraft.core.registries.Registries;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class MorexpitemsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MorexpitemsMod.MODID);
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOD = REGISTRY.register("mod",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.morexpitems.mod")).icon(() -> new ItemStack(MorexpitemsModItems.XP_INGOT_PLUS.get())).displayItems((parameters, tabData) -> {
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOD_MOREXPITEMS = REGISTRY.register("mod_morexpitems",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.morexpitems.mod_morexpitems")).icon(() -> new ItemStack(MorexpitemsModItems.XP_INGOT_PLUS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MorexpitemsModBlocks.XP_ORE.get().asItem());
 				tabData.accept(MorexpitemsModItems.XP_INGOT.get());
 				tabData.accept(MorexpitemsModBlocks.XP_CHEST.get().asItem());
@@ -33,6 +33,8 @@ public class MorexpitemsModTabs {
 				tabData.accept(MorexpitemsModItems.XP_HOE.get());
 				tabData.accept(MorexpitemsModItems.XP_SWORD.get());
 				tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
+				tabData.accept(MorexpitemsModItems.GET_SUPEREXP_STICK.get());
+				tabData.accept(MorexpitemsModItems.SUPER_EXP_SPAWN_EGG.get());
 			}).build());
 
 	@SubscribeEvent
@@ -54,6 +56,9 @@ public class MorexpitemsModTabs {
 			tabData.accept(MorexpitemsModItems.XP_SHOVEL.get());
 			tabData.accept(MorexpitemsModItems.XP_HOE.get());
 			tabData.accept(MorexpitemsModItems.XP_TO_BOTTLE.get());
+			tabData.accept(MorexpitemsModItems.GET_SUPEREXP_STICK.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(MorexpitemsModItems.SUPER_EXP_SPAWN_EGG.get());
 		}
 	}
 }
